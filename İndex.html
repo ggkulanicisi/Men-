@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Şık QR İçecek Menüsü</title>
+  <style>
+    /* Genel stil */
+    body {
+      background: #f0f4f8;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #2c3e50;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+    }
+    .container {
+      background: white;
+      max-width: 600px;
+      width: 100%;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      padding: 30px 40px;
+    }
+    h1 {
+      text-align: center;
+      font-weight: 700;
+      margin-bottom: 30px;
+      color: #34495e;
+      letter-spacing: 1px;
+    }
+    h2 {
+      color: #1abc9c;
+      border-bottom: 2px solid #1abc9c;
+      padding-bottom: 5px;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    li {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px solid #ecf0f1;
+      font-size: 16px;
+      font-weight: 500;
+      transition: background 0.3s ease;
+      cursor: default;
+    }
+    li:hover {
+      background: #ecf9f6;
+    }
+    .price {
+      color: #16a085;
+      font-weight: 700;
+      min-width: 60px;
+      text-align: right;
+    }
+    /* Mobil uyumluluk */
+    @media(max-width: 640px) {
+      .container {
+        padding: 20px;
+        margin: 0 10px;
+      }
+      li {
+        font-size: 14px;
+      }
+      h1 {
+        font-size: 22px;
+      }
+      h2 {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>İçecek Menüsü</h1>
+
+    <h2>Soğuk İçecekler</h2>
+    <ul>
+      <li><span>Oralet</span> <span class="price">10 TL</span></li>
+      <li><span>Çay</span> <span class="price">10 TL</span></li>
+      <li><span>Kahve</span> <span class="price">12 TL</span></li>
+      <li><span>Su</span> <span class="price">10 TL</span></li>
+    </ul>
+
+    <h2>Soda Çeşitleri</h2>
+    <ul>
+      <li><span>Limon, Karpuz, Çilek, Elma vb</span> <span class="price">20 TL</span></li>
+      <li><span>Niğde Gazozu</span> <span class="price">25 TL</span></li>
+    </ul>
+
+    <h2>Enerji & Gazlı İçecekler</h2>
+    <ul>
+      <li><span>Didi</span> <span class="price">30 TL</span></li>
+      <li><span>Dark Blue</span> <span class="price">40 TL</span></li>
+      <li><span>Just Power</span> <span class="price">35 TL</span></li>
+    </ul>
+
+    <h2>Sarıyer Ürünleri</h2>
+    <ul>
+      <li><span>Portakal</span> <span class="price">30 TL</span></li>
+      <li><span>Kola 330ML</span> <span class="price">30 TL</span></li>
+      <li><span>Kola 1LT</span> <span class="price">40 TL</span></li>
+    </ul>
+
+    <h2>Cola Turka</h2>
+    <ul>
+      <li><span>Cola Turka</span> <span class="price">30 TL</span></li>
+    </ul>
+
+    <h2>Meyve Suları</h2>
+    <ul>
+      <li><span>Juss Tea</span> <span class="price">25 TL</span></li>
+      <li><span>Juss Vişne 1LT</span> <span class="price">60 TL</span></li>
+      <li><span>Juss Tea Mango</span> <span class="price">15 TL</span></li>
+    </ul>
+  </div>
+</body>
+</html>
